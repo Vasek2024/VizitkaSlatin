@@ -1,0 +1,26 @@
+/* сдесь будут какие то отдельные стили для этой страници */
+.main__tel{
+    /* убирем маркеры у списка */
+    list-style: none;
+     /* сплошной бордер для обёртки */
+     border-style: solid;
+     /* толщина рамки */
+     border-width: 0.5px;
+     /* цвет рамки */
+     border-color: rgb(94, 94, 94);
+     /* скругление рамки */
+     border-radius: 0.3em;
+     /* наружний отступ */
+     /* margin: 0.5em; */
+     /* внутренний отступ */
+     padding: 0.5em;
+}
+.main__what{
+margin: 0 4px -6px 10px;
+}
+.main__vib{
+    margin: 0 4px -6px 44px;
+}
+.main__ema{
+    margin: 0 4px -6px 42px;
+}

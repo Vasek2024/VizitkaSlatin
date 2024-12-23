@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-width: 600px;
+}
+h2{/* для всех тегов h2 (на странице) */
+    padding: 5px 0 5px 1em;
+    font-family: "Montserrat", serif;
+    font-weight: 700;/* толщина шрифта */
+    font-size: 20px;
+}
+h3{/* для всех тегов h3 (на странице) */
+    padding: 5px 0 5px 1.4em;
+    font-family: "Montserrat", serif;
+    font-weight: 400;/* толщина шрифта */
+    font-size: 16px;
+}
+p{/* для всех параграфов (на странице) */
+    padding: 0 0 10px 0;
+    text-indent: 1.5em;/* с красной строки (начальный отступ у всех параграфов) */
+    font-family: "Noto Sans Georgian", serif;
+    font-weight: 400;/* толщина */
+    line-height: 1.6em; /* расстояние между строками */
+}
+
+.wraper{ /* Обёртка всего контента */
+    margin: 0 auto;
+    padding: 20px 20px 0 20px;
+    border-style: solid;/* сплошной бордер для обёртки */
+    border-width: 0.5px;/* толщина рамки */
+    border-color: rgb(94, 94, 94);/* цвет рамки */
+    border-radius: 0.3em;/* скругление рамки */
+    margin: 0.5em;/* наружний отступ */
+}
+
+
+
+.header__nav>ul{ /* навигация */
+    display: flex;
+    justify-content: space-between;/* распологаем весь контент равномерно по родительскому блоку */
+    list-style: none;/* убираем круглые маркиры в списке li */
+    flex-direction:row-reverse;/* меню задом на перёд */
+}
+.header__nav>ul>li{/* маркерованный список */
+    padding: 10px;
+    border: 2px solid rgb(226, 43, 128);/* бордер навигации */
+    border-radius: 20px;/* скругление */
+}
+.header__nav>ul>li>a{/* ссылки */
+    font-size: 1.1em;/* размер шрифта */
+    text-decoration: none;/* убираем подчёркивание */
+}
+.header__nav>ul>li>a:hover{/* псевдо класс ссылки при навидении курсора */
+    color: rgb(226, 43, 128);
+}
+.header__nav>ul>li>a:active{/* псевдо класс ссылки при клике по ссылке */
+    color: rgb(226, 183, 43);
+}
+.header__nav img{ /* иконки */
+    margin: 0 10px -4px 0;
+}
+
+
+.main{ /* блок с контентом */
+    
+    padding: 10px 0 10px 0;/* отступы в шапке (верх, право, низ, лево) */
+}
+.main__ic{/* иконка h1 */
+    margin: 0 10px -4px 0;
+}
+.ic-vse{
+    margin: 0 0 -4px 10px;
+}
+.main>.main__article>h1{/* достаём до атрибута h1 через вложенность классов */
+    padding: 20px 0 16px 1em;
+    text-decoration: 2px underline rgb(226, 43, 128);
+    font-family: "Montserrat", serif;/* шрифт с засечками */
+    font-weight: 900;/* толщина шрифта */
+    font-size: 26px; /* размер */
+}
+.main__foto{/* главное фото */
+    padding: 0 20px 20px 0;
+    width: 20%;/* 40% ширины от родительского блока */
+    float: left; /* обтекание картинки справа */
+    border-radius: 20%; /* скругление */
+}
+
+
+.main__iti{/* Как я стал разработчиком */
+    /* margin: 0 10px -4px 0; */
+}
+.main__data{ /* блок с датой */
+    list-style: none;/* убирем маркеры у списка */
+     border-style: solid;/* сплошной бордер для обёртки */
+     border-width: 0.5px;/* толщина рамки */
+     border-color: rgb(94, 94, 94);/* цвет рамки */
+     border-radius: 0.3em;/* скругление рамки */
+     padding: 0.5em;
+}
+.main__data>li{/* список дат */
+    padding-top: 5px;
+}
+
+
+.footer{/* подвал */
+    display: flex;
+    justify-content: center;
+    flex: 0 0 auto;
+    height: 100vh;
+    color: red;
+    /* border: 2px solid yellow; */
+}
